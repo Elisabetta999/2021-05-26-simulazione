@@ -13,6 +13,7 @@ public class Business {
 	private double longitude;
 	private String state;
 	private double stars;
+	private double mediaRecensioni;
 	
 	
 	public Business(String businessId, String fullAddress, String active, String categories, String city, int reviewCount,
@@ -105,6 +106,14 @@ public class Business {
 		this.stars = stars;
 	}
 
+	public double getMediaRecensioni() {
+		return mediaRecensioni;
+	}
+
+	public void setMediaRecensioni(double mediaRecensioni) {
+		this.mediaRecensioni = mediaRecensioni;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -129,6 +138,12 @@ public class Business {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Business [businessId=" + businessId + ", businessName=" + businessName + "]";
+	}
+	
 
 	
 }
